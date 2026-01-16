@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@release-it/conventional-changelog':
+    hash: e254c417773e9ab9647f32ffd0faebc1fc3aa5a041b94a8c3f5cf237d643d31e
+    path: patches/@release-it__conventional-changelog.patch
+
 importers:
 
   .:
@@ -41,7 +46,7 @@ importers:
         version: 20.3.1
       '@release-it/conventional-changelog':
         specifier: ^10.0.4
-        version: 10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.3(@types/node@25.0.9))
+        version: 10.0.4(patch_hash=e254c417773e9ab9647f32ffd0faebc1fc3aa5a041b94a8c3f5cf237d643d31e)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.3(@types/node@25.0.9))
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.1.18(vite@8.0.0-beta.8(@types/node@25.0.9)(jiti@2.6.1)(yaml@2.8.2))
@@ -3971,7 +3976,7 @@ snapshots:
 
   '@reactive-vscode/reactivity@1.0.0-beta.2': {}
 
-  '@release-it/conventional-changelog@10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.3(@types/node@25.0.9))':
+  '@release-it/conventional-changelog@10.0.4(patch_hash=e254c417773e9ab9647f32ffd0faebc1fc3aa5a041b94a8c3f5cf237d643d31e)(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.3(@types/node@25.0.9))':
     dependencies:
       '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)
       concat-stream: 2.0.0
