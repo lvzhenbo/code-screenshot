@@ -1,5 +1,10 @@
 # 更新日志
 
+## <small>0.1.1 (2026-01-19)</small>
+
+- fix: 修复csp问题 ([ec389f8](https://github.com/lvzhenbo/code-screenshot/commit/ec389f8))
+- chore: 更新扩展名称为 lzb-code-screenshot ([9bdd528](https://github.com/lvzhenbo/code-screenshot/commit/9bdd528))
+
 ## 0.1.0 (2026-01-19)
 
 - chore: 发布准备 ([bfd54b9](https://github.com/lvzhenbo/code-screenshot/commit/bfd54b9))
