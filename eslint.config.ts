@@ -14,6 +14,7 @@ configureVueProject({ scriptLangs: ['ts', 'tsx'] });
 // More info at https://github.com/vuejs/eslint-config-typescript/#advanced-setup
 
 export default defineConfigWithVueTs(
+  vueTsConfigs.recommended,
   {
     extends: [...pluginVue.configs['flat/recommended']],
     name: 'app/vue-files',
@@ -44,7 +45,6 @@ export default defineConfigWithVueTs(
       ],
     },
   },
-
   globalIgnores([
     '**/dist/**',
     '**/dist-ssr/**',
@@ -52,8 +52,5 @@ export default defineConfigWithVueTs(
     'auto-imports.d.ts',
     'components.d.ts',
   ]),
-
-  vueTsConfigs.recommended,
-
   prettierConfig,
 );
