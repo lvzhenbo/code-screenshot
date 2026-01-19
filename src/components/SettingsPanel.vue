@@ -119,7 +119,7 @@
             placeholder="例如: #e2e2e2 或 linear-gradient(to right, #e2e2e2, #c9d6ff)"
           ></vscode-textfield>
           <vscode-form-helper>
-            <p>设置容器背景颜色，background的有效值</p>
+            <p>设置容器背景颜色，CSS background的有效值</p>
           </vscode-form-helper>
         </vscode-form-group>
 
