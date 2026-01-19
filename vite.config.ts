@@ -26,7 +26,11 @@ export default defineConfig({
     }),
     Components(),
     tailwindcss(),
-    vscode(),
+    vscode({
+      webview: {
+        csp: `<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src {{cspSource}} https: data: blob:; style-src {{cspSource}} 'unsafe-inline'; script-src 'nonce-{{nonce}}' 'unsafe-eval';">`,
+      },
+    }),
   ],
   resolve: {
     alias: {
@@ -37,18 +41,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 10000,
     rolldownOptions: {
       output: {
-        codeSplitting: {
-          groups: [
-            {
-              name: (moduleId) =>
-                moduleId.includes('shiki') && moduleId.includes('langs') ? 'shiki-langs' : null,
-            },
-            {
-              name: (moduleId) =>
-                moduleId.includes('shiki') && moduleId.includes('themes') ? 'shiki-themes' : null,
-            },
-          ],
-        },
+        inlineDynamicImports: true,
       },
     },
   },
