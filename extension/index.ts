@@ -7,7 +7,7 @@ import {
   useDocumentText,
   useTextEditorSelection,
 } from 'reactive-vscode';
-import { ViewColumn, window, workspace } from 'vscode';
+import { Uri, ViewColumn, window, workspace } from 'vscode';
 import type { WebviewPanel } from 'vscode';
 import { getWebviewHtml } from 'virtual:vscode';
 
@@ -108,6 +108,9 @@ const { activate, deactivate } = defineExtension((ctx) => {
       enableScripts: true,
       retainContextWhenHidden: true,
     });
+
+    // 设置 panel 图标
+    panel.iconPath = Uri.joinPath(ctx.extensionUri, 'public', 'favicon.png');
 
     currentPanel.value = panel;
 

@@ -5,11 +5,20 @@
   "license": "MIT",
   "displayName": "代码截图",
   "description": "一个用于在 VSCode 中快速截图代码的扩展，支持多种自定义设置和高质量图片输出。",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lvzhenbo/code-screenshot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lvzhenbo/code-screenshot/issues"
+  },
+  "homepage": "https://github.com/lvzhenbo/code-screenshot#readme",
+  "icon": "public/favicon.png",
   "private": true,
   "type": "module",
   "engines": {
     "node": ">=24.0.0",
-    "vscode": "^1.100.0"
+    "vscode": "^1.108.0"
   },
   "main": "dist/extension/index.js",
   "activationEvents": [],
@@ -40,15 +49,6 @@
     "prepare": "husky",
     "release": "release-it"
   },
-  "dependencies": {
-    "@vscode-elements/elements": "^2.4.0",
-    "@vueuse/core": "^14.1.0",
-    "@zumer/snapdom": "^2.0.1",
-    "es-toolkit": "^1.44.0",
-    "reactive-vscode": "1.0.0-beta.2",
-    "shiki": "^3.21.0",
-    "vue": "^3.5.26"
-  },
   "devDependencies": {
     "@commitlint/cli": "^20.3.1",
     "@commitlint/config-conventional": "^20.3.1",
@@ -61,9 +61,14 @@
     "@types/vscode": "^1.108.1",
     "@vitejs/plugin-vue": "^6.0.3",
     "@vitejs/plugin-vue-jsx": "^5.1.3",
+    "@vscode-elements/elements": "^2.4.0",
+    "@vscode/vsce": "^3.7.1",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/tsconfig": "^0.8.1",
+    "@vueuse/core": "^14.1.0",
+    "@zumer/snapdom": "^2.0.1",
+    "es-toolkit": "^1.44.0",
     "eslint": "^9.39.2",
     "eslint-plugin-vue": "^10.7.0",
     "husky": "^9.1.7",
@@ -71,13 +76,16 @@
     "lint-staged": "^16.2.7",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.8.0",
+    "reactive-vscode": "1.0.0-beta.2",
     "release-it": "^19.2.3",
+    "shiki": "^3.21.0",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
     "unplugin-auto-import": "^21.0.0",
     "unplugin-vue-components": "^31.0.0",
     "vite": "beta",
     "vite-plugin-vue-devtools": "^8.0.5",
+    "vue": "^3.5.26",
     "vue-eslint-parser": "^10.2.0",
     "vue-tsc": "^3.2.2"
   },

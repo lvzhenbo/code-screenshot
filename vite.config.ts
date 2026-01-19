@@ -33,4 +33,23 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    chunkSizeWarningLimit: 10000,
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name: (moduleId) =>
+                moduleId.includes('shiki') && moduleId.includes('langs') ? 'shiki-langs' : null,
+            },
+            {
+              name: (moduleId) =>
+                moduleId.includes('shiki') && moduleId.includes('themes') ? 'shiki-themes' : null,
+            },
+          ],
+        },
+      },
+    },
+  },
 });
