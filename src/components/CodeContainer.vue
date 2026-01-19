@@ -1,20 +1,19 @@
 <template>
   <div class="code-container overflow-auto">
-    <div
-      ref="codeWrapper"
-      class="code-wrapper rounded-lg overflow-hidden shadow-lg inline-block min-w-full"
-    >
-      <!-- 窗口标题栏 -->
-      <div class="window-header flex items-center gap-2 px-4 py-3 bg-[#1e1e1e]">
-        <div class="flex gap-2">
-          <span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
-          <span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
-          <span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+    <div ref="codeWrapper" class="code-wrapper nline-block min-w-full">
+      <div class="rounded-lg overflow-hidden shadow-lg">
+        <!-- 窗口标题栏 -->
+        <div class="window-header flex items-center gap-2 px-4 py-3 bg-[#1e1e1e]">
+          <div class="flex gap-2">
+            <span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
+            <span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+            <span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+          </div>
+          <span class="ml-2 text-xs text-gray-400">{{ displayFileName }}</span>
         </div>
-        <span class="ml-2 text-xs text-gray-400">{{ displayFileName }}</span>
+        <!-- 代码区域 -->
+        <div class="code-content" v-html="highlightedCode"></div>
       </div>
-      <!-- 代码区域 -->
-      <div class="code-content" v-html="highlightedCode"></div>
     </div>
   </div>
 </template>
@@ -38,6 +37,8 @@
     languageId: string;
     startLine: number;
     editorConfig: EditorConfig;
+    containerBackground: string;
+    containerPadding: string;
   }>();
 
   // 暴露 codeWrapper 给父组件
@@ -94,6 +95,8 @@
   /* 代码包装器样式 */
   .code-wrapper {
     width: fit-content;
+    background: v-bind('props.containerBackground');
+    padding: v-bind('props.containerPadding');
   }
 
   /* Shiki 代码块样式 */

@@ -109,6 +109,32 @@
             <p>设置图片压缩质量，范围: 1-100，数值越大质量越高</p>
           </vscode-form-helper>
         </vscode-form-group>
+
+        <!-- 容器背景 -->
+        <vscode-form-group>
+          <vscode-label for="container-background">容器背景</vscode-label>
+          <vscode-textfield
+            id="container-background"
+            v-model="containerBackground"
+            placeholder="例如: #e2e2e2 或 linear-gradient(to right, #e2e2e2, #c9d6ff)"
+          ></vscode-textfield>
+          <vscode-form-helper>
+            <p>设置容器背景颜色，background的有效值</p>
+          </vscode-form-helper>
+        </vscode-form-group>
+
+        <!-- 容器内边距 -->
+        <vscode-form-group>
+          <vscode-label for="container-padding">容器内边距</vscode-label>
+          <vscode-textfield
+            id="container-padding"
+            v-model="containerPadding"
+            placeholder="例如: 32px 或 2rem"
+          ></vscode-textfield>
+          <vscode-form-helper>
+            <p>设置容器内边距，带单位</p>
+          </vscode-form-helper>
+        </vscode-form-group>
       </div>
     </div>
   </vscode-collapsible>
@@ -131,6 +157,8 @@
   const editorConfig = defineModel<EditorConfig>('editorConfig', { required: true });
   const imageFormat = defineModel<ImageFormat>('imageFormat', { required: true });
   const imageQuality = defineModel<number>('imageQuality', { required: true });
+  const containerBackground = defineModel<string>('containerBackground', { required: true });
+  const containerPadding = defineModel<string>('containerPadding', { required: true });
 
   // 设置面板折叠状态
   const settingsOpen = ref(false);

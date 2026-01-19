@@ -13,6 +13,8 @@
       v-model:editor-config="editorConfig"
       v-model:image-format="selectedImageFormat"
       v-model:image-quality="imageQuality"
+      v-model:container-background="containerBackground"
+      v-model:container-padding="containerPadding"
       class="mb-4"
     />
 
@@ -23,6 +25,8 @@
       :language-id
       :start-line
       :editor-config
+      :container-background
+      :container-padding
     />
   </div>
 </template>
@@ -56,6 +60,10 @@
     fontLigatures: false,
     colorTheme: 'Default Dark+',
   });
+
+  // 容器样式配置
+  const containerBackground = ref('linear-gradient(to right, #e2e2e2, #c9d6ff)');
+  const containerPadding = ref('2rem');
 
   // 当前选择的图片格式
   const selectedImageFormat = ref<ImageFormat>('png');
