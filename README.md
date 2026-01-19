@@ -43,7 +43,7 @@
 
 ## 🛠️ 开发与构建
 
-本项目是一个基于 Webview 的 VSCode 扩展，前端界面使用 Vue 3 + Vite 构建。
+本项目是一个基于 Webview 的 VSCode 扩展，前端界面使用 Vue 3 + Vite + [vite-plugin-vscode](https://github.com/tomjs/vite-plugin-vscode) 构建，插件使用 [reactive-vscode](https://github.com/kermanx/reactive-vscode) 简化开发。
 
 ### 环境要求
 
@@ -58,11 +58,7 @@ pnpm install
 
 ### 开发调试
 
-1. 启动 Webview 前端构建监听：
-   ```bash
-   pnpm dev
-   ```
-2. 在 VSCode 中，按下 `F5` 启动扩展宿主环境进行调试。
+在 VSCode 中，按下 `F5` 启动扩展宿主环境进行调试。
 
 ### 构建发布
 
