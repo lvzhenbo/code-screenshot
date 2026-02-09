@@ -1,6 +1,3 @@
 onlyBuiltDependencies:
   - '@vscode/vsce-sign'
   - keytar
-
-patchedDependencies:
-  '@release-it/conventional-changelog': patches/@release-it__conventional-changelog.patch
