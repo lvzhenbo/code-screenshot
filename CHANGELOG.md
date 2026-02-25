@@ -1,5 +1,16 @@
 # 更新日志
 
+## [0.1.2](https://github.com/lvzhenbo/code-screenshot/compare/v0.1.1...v0.1.2) (2026-02-25)
+
+### ✨ 新功能
+
+- 根据shiki新版本，更新主题配置，添加新主题和调整现有主题名称 ([4c21c07](https://github.com/lvzhenbo/code-screenshot/commit/4c21c0702e7bb79792e14e31f1462905c8efc293))
+
+### 🔧 其他更新
+
+- 更新依赖 ([9bb6afe](https://github.com/lvzhenbo/code-screenshot/commit/9bb6afe3cd24f21853061b31ff0495aa02d46e7f))
+- 更新依赖，删除patch ([1e0e6ed](https://github.com/lvzhenbo/code-screenshot/commit/1e0e6ed8cfe8c8bc1d0e6a82bb79f6da0c681cb7))
+
 ## <small>0.1.1 (2026-01-19)</small>
 
 - fix: 修复csp问题 ([ec389f8](https://github.com/lvzhenbo/code-screenshot/commit/ec389f8))
