@@ -32,18 +32,26 @@ export const themeConfig = [
   { label: 'Monokai', value: 'monokai', vscodeNames: ['Monokai', 'Monokai Dimmed'] },
 
   // 流行的第三方主题
-  { label: 'Dracula', value: 'dracula', vscodeNames: ['Dracula', 'Dracula Theme'] },
+  { label: 'Dracula', value: 'dracula', vscodeNames: ['Dracula Theme', 'Dracula'] },
   {
     label: 'Dracula Soft',
     value: 'dracula-soft',
-    vscodeNames: ['Dracula Soft', 'Dracula Theme Soft'],
+    vscodeNames: ['Dracula Theme Soft', 'Dracula Soft'],
   },
   {
     label: 'One Dark Pro',
     value: 'one-dark-pro',
-    vscodeNames: ['One Dark Pro', 'Atom One Dark', 'One Monokai'],
+    vscodeNames: [
+      'One Dark Pro',
+      'One Dark Pro Flat',
+      'One Dark Pro Darker',
+      'One Dark Pro Mix',
+      'One Dark Pro Night Flat',
+      'Atom One Dark',
+      'One Monokai',
+    ],
   },
-  { label: 'One Light', value: 'one-light', vscodeNames: ['One Light', 'Atom One Light'] },
+  { label: 'One Light', value: 'one-light', vscodeNames: ['Atom One Light', 'One Light'] },
   { label: 'GitHub Dark', value: 'github-dark', vscodeNames: ['GitHub Dark'] },
   {
     label: 'GitHub Dark Default',
@@ -71,11 +79,7 @@ export const themeConfig = [
     value: 'github-light-high-contrast',
     vscodeNames: ['GitHub Light High Contrast', 'Default High Contrast Light'],
   },
-  {
-    label: 'Nord',
-    value: 'nord',
-    vscodeNames: ['Nord', 'Nord Deep', 'Kimbie Dark', 'Tomorrow Night Blue'],
-  },
+  { label: 'Nord', value: 'nord', vscodeNames: ['Nord'] },
   {
     label: 'Tokyo Night',
     value: 'tokyo-night',
@@ -83,26 +87,30 @@ export const themeConfig = [
   },
 
   // Material 系列
-  { label: 'Material Theme', value: 'material-theme', vscodeNames: ['Material Theme'] },
+  {
+    label: 'Material Theme',
+    value: 'material-theme',
+    vscodeNames: ['Material Theme', 'Material Theme High Contrast'],
+  },
   {
     label: 'Material Theme Darker',
     value: 'material-theme-darker',
-    vscodeNames: ['Material Theme Darker', 'Material Darker'],
+    vscodeNames: ['Material Theme Darker', 'Material Theme Darker High Contrast'],
   },
   {
     label: 'Material Theme Lighter',
     value: 'material-theme-lighter',
-    vscodeNames: ['Material Theme Lighter', 'Material Lighter'],
+    vscodeNames: ['Material Theme Lighter', 'Material Theme Lighter High Contrast'],
   },
   {
     label: 'Material Theme Ocean',
     value: 'material-theme-ocean',
-    vscodeNames: ['Material Theme Ocean', 'Material Ocean'],
+    vscodeNames: ['Material Theme Ocean', 'Material Theme Ocean High Contrast'],
   },
   {
     label: 'Material Theme Palenight',
     value: 'material-theme-palenight',
-    vscodeNames: ['Material Theme Palenight', 'Material Palenight'],
+    vscodeNames: ['Material Theme Palenight', 'Material Theme Palenight High Contrast'],
   },
 
   // Catppuccin 系列
@@ -140,21 +148,33 @@ export const themeConfig = [
   },
 
   // Rose Pine 系列
-  { label: 'Rose Pine', value: 'rose-pine', vscodeNames: ['Rose Pine', 'Rosé Pine'] },
   {
-    label: 'Rose Pine Dawn',
-    value: 'rose-pine-dawn',
-    vscodeNames: ['Rose Pine Dawn', 'Rosé Pine Dawn'],
+    label: 'Rosé Pine',
+    value: 'rose-pine',
+    vscodeNames: ['Rosé Pine', 'Rosé Pine (no italics)', 'Rose Pine'],
   },
   {
-    label: 'Rose Pine Moon',
+    label: 'Rosé Pine Dawn',
+    value: 'rose-pine-dawn',
+    vscodeNames: ['Rosé Pine Dawn', 'Rosé Pine Dawn (no italics)', 'Rose Pine Dawn'],
+  },
+  {
+    label: 'Rosé Pine Moon',
     value: 'rose-pine-moon',
-    vscodeNames: ['Rose Pine Moon', 'Rosé Pine Moon'],
+    vscodeNames: ['Rosé Pine Moon', 'Rosé Pine Moon (no italics)', 'Rose Pine Moon'],
   },
 
   // Vitesse 系列
-  { label: 'Vitesse Dark', value: 'vitesse-dark', vscodeNames: ['Vitesse Dark'] },
-  { label: 'Vitesse Light', value: 'vitesse-light', vscodeNames: ['Vitesse Light'] },
+  {
+    label: 'Vitesse Dark',
+    value: 'vitesse-dark',
+    vscodeNames: ['Vitesse Dark', 'Vitesse Dark Soft'],
+  },
+  {
+    label: 'Vitesse Light',
+    value: 'vitesse-light',
+    vscodeNames: ['Vitesse Light', 'Vitesse Light Soft'],
+  },
   { label: 'Vitesse Black', value: 'vitesse-black', vscodeNames: ['Vitesse Black'] },
 
   // Everforest 系列
@@ -166,28 +186,94 @@ export const themeConfig = [
   { label: 'Kanagawa Dragon', value: 'kanagawa-dragon', vscodeNames: ['Kanagawa Dragon'] },
   { label: 'Kanagawa Lotus', value: 'kanagawa-lotus', vscodeNames: ['Kanagawa Lotus'] },
 
+  // Horizon 系列
+  {
+    label: 'Horizon',
+    value: 'horizon',
+    vscodeNames: ['Horizon', 'Horizon Italic', 'Horizon Bold'],
+  },
+  {
+    label: 'Horizon Bright',
+    value: 'horizon-bright',
+    vscodeNames: ['Horizon Bright', 'Horizon Bright Italic', 'Horizon Bright Bold'],
+  },
+
   // 其他主题
-  { label: 'Night Owl', value: 'night-owl', vscodeNames: ['Night Owl', 'Light Owl'] },
+  {
+    label: 'Night Owl',
+    value: 'night-owl',
+    vscodeNames: ['Night Owl', 'Night Owl (No Italics)'],
+  },
+  {
+    label: 'Night Owl Light',
+    value: 'night-owl-light',
+    vscodeNames: ['Night Owl Light', 'Night Owl Light (No Italics)'],
+  },
   { label: 'Solarized Dark', value: 'solarized-dark', vscodeNames: ['Solarized Dark'] },
   { label: 'Solarized Light', value: 'solarized-light', vscodeNames: ['Solarized Light'] },
-  { label: 'Ayu Dark', value: 'ayu-dark', vscodeNames: ['Ayu Dark', 'Ayu Mirage', 'Abyss'] },
   {
-    label: "Synthwave '84",
-    value: 'synthwave-84',
-    vscodeNames: ['Synthwave 84', "Synthwave '84"],
+    label: 'Ayu Dark',
+    value: 'ayu-dark',
+    vscodeNames: ['Ayu Dark', 'Ayu Dark Bordered'],
   },
-  { label: 'Poimandres', value: 'poimandres', vscodeNames: ['Poimandres'] },
+  {
+    label: 'Ayu Light',
+    value: 'ayu-light',
+    vscodeNames: ['Ayu Light', 'Ayu Light Bordered'],
+  },
+  {
+    label: 'Ayu Mirage',
+    value: 'ayu-mirage',
+    vscodeNames: ['Ayu Mirage', 'Ayu Mirage Bordered'],
+  },
+  { label: "SynthWave '84", value: 'synthwave-84', vscodeNames: ["SynthWave '84"] },
+  {
+    label: 'Poimandres',
+    value: 'poimandres',
+    vscodeNames: [
+      'poimandres',
+      'poimandres-storm',
+      'poimandres-noitalics',
+      'poimandres-noitalics-storm',
+    ],
+  },
   { label: 'Houston', value: 'houston', vscodeNames: ['Houston'] },
-  { label: 'Plastic', value: 'plastic', vscodeNames: ['Plastic'] },
+  {
+    label: 'Plastic',
+    value: 'plastic',
+    vscodeNames: ['Plastic', 'Plastic - deprioritised punctuation'],
+  },
   { label: 'Vesper', value: 'vesper', vscodeNames: ['Vesper'] },
-  { label: 'Slack Dark', value: 'slack-dark', vscodeNames: ['Slack Dark'] },
-  { label: 'Slack Ochin', value: 'slack-ochin', vscodeNames: ['Slack Ochin'] },
+  {
+    label: 'Slack Dark',
+    value: 'slack-dark',
+    vscodeNames: ['Slack Theme Dark Mode', 'Slack Theme Aubergine Dark', 'Slack Dark'],
+  },
+  {
+    label: 'Slack Ochin',
+    value: 'slack-ochin',
+    vscodeNames: ['Slack Theme Ochin', 'Slack Ochin'],
+  },
   { label: 'Min Dark', value: 'min-dark', vscodeNames: ['Min Dark'] },
   { label: 'Min Light', value: 'min-light', vscodeNames: ['Min Light'] },
   { label: 'Snazzy Light', value: 'snazzy-light', vscodeNames: ['Snazzy Light'] },
-  { label: 'LaserWave', value: 'laserwave', vscodeNames: ['LaserWave'] },
+  {
+    label: 'LaserWave',
+    value: 'laserwave',
+    vscodeNames: ['LaserWave', 'LaserWave Italic', 'LaserWave High Contrast'],
+  },
   { label: 'Aurora X', value: 'aurora-x', vscodeNames: ['Aurora X'] },
-  { label: 'Andromeeda', value: 'andromeeda', vscodeNames: ['Andromeeda'] },
+  {
+    label: 'Andromeda',
+    value: 'andromeeda',
+    vscodeNames: [
+      'Andromeda',
+      'Andromeda Bordered',
+      'Andromeda Italic',
+      'Andromeda Italic Bordered',
+      'Andromeda Colorizer',
+    ],
+  },
   { label: 'Red', value: 'red', vscodeNames: ['Red'] },
 ] as const;
 
@@ -202,6 +288,8 @@ export const shikiThemes = [
   'andromeeda',
   'aurora-x',
   'ayu-dark',
+  'ayu-light',
+  'ayu-mirage',
   'catppuccin-frappe',
   'catppuccin-latte',
   'catppuccin-macchiato',
@@ -224,6 +312,8 @@ export const shikiThemes = [
   'gruvbox-light-hard',
   'gruvbox-light-medium',
   'gruvbox-light-soft',
+  'horizon',
+  'horizon-bright',
   'houston',
   'kanagawa-dragon',
   'kanagawa-lotus',
@@ -239,6 +329,7 @@ export const shikiThemes = [
   'min-light',
   'monokai',
   'night-owl',
+  'night-owl-light',
   'nord',
   'one-dark-pro',
   'one-light',
@@ -298,6 +389,19 @@ export function getShikiTheme(vscodeTheme: string): ShikiTheme {
   }
 
   // 根据关键词匹配
+  // Ayu
+  if (lowerTheme.includes('ayu')) {
+    if (lowerTheme.includes('light')) return 'ayu-light';
+    if (lowerTheme.includes('mirage')) return 'ayu-mirage';
+    return 'ayu-dark';
+  }
+
+  // Horizon
+  if (lowerTheme.includes('horizon')) {
+    if (lowerTheme.includes('bright')) return 'horizon-bright';
+    return 'horizon';
+  }
+
   // Catppuccin
   if (lowerTheme.includes('catppuccin')) {
     if (lowerTheme.includes('latte')) return 'catppuccin-latte';
@@ -376,17 +480,25 @@ export function getShikiTheme(vscodeTheme: string): ShikiTheme {
     return lowerTheme.includes('soft') ? 'dracula-soft' : 'dracula';
   if (lowerTheme.includes('monokai')) return 'monokai';
   if (lowerTheme.includes('nord')) return 'nord';
-  if (lowerTheme.includes('night owl') || lowerTheme.includes('nightowl')) return 'night-owl';
+  if (lowerTheme.includes('night owl') || lowerTheme.includes('nightowl')) {
+    if (lowerTheme.includes('light')) return 'night-owl-light';
+    return 'night-owl';
+  }
   if (lowerTheme.includes('one dark')) return 'one-dark-pro';
   if (lowerTheme.includes('one light')) return 'one-light';
   if (lowerTheme.includes('poimandres')) return 'poimandres';
   if (lowerTheme.includes('synthwave')) return 'synthwave-84';
-  if (lowerTheme.includes('ayu')) return 'ayu-dark';
+  if (lowerTheme.includes('andromeda')) return 'andromeeda';
   if (lowerTheme.includes('slack'))
     return lowerTheme.includes('ochin') ? 'slack-ochin' : 'slack-dark';
   if (lowerTheme.includes('min ') || lowerTheme.includes('min-')) {
     return lowerTheme.includes('light') ? 'min-light' : 'min-dark';
   }
+
+  // VSCode 内置主题 fallback
+  if (lowerTheme.includes('abyss')) return 'dark-plus';
+  if (lowerTheme.includes('kimbie')) return 'dark-plus';
+  if (lowerTheme.includes('tomorrow night blue')) return 'dark-plus';
 
   // 根据 dark/light 关键词选择默认主题
   if (lowerTheme.includes('light')) return 'light-plus';
