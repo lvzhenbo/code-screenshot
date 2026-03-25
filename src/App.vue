@@ -126,14 +126,9 @@
         ]);
         post('showMessage', { message: '截图已复制到剪贴板' });
       } catch (clipboardError) {
-        // 如果 webview 中复制失败，则通过扩展处理
-        console.log('Webview clipboard failed, using extension method', clipboardError);
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          const dataUrl = reader.result as string;
-          post('copyImage', { dataUrl, format, mimeType });
-        };
-        reader.readAsDataURL(blob);
+        // 如果是开发环境，由于VS Code 的 webview 权限模型原因，属于正常现象
+        console.warn('复制到剪贴板失败:', clipboardError);
+        post('showMessage', { message: '复制到剪贴板失败: ' + clipboardError, isError: true });
       }
     } catch (error) {
       console.error('截图失败:', error);

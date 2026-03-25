@@ -11,6 +11,9 @@ import vscode from '@tomjs/vite-plugin-vscode';
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    forwardConsole: true,
+  },
   plugins: [
     vue({
       template: {
